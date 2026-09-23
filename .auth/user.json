@@ -1,0 +1,65 @@
+{
+  "cookies": [
+    {
+      "name": "did",
+      "value": "s%3Av0%3Ae93fbfca-b550-4c64-8134-bc37b1b02d92%3A8ba554bc10c37e210ce29d8deeebfdb68ce4b7055a6a66d053d79d1a7674ca4e.lC0jTpDcxarvIdkbfLq6MwnolzicBcLCrcFBAyc7ESw",
+      "domain": "bondaracademy.us.auth0.com",
+      "path": "/",
+      "expires": 1821702201.651554,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "did_compat",
+      "value": "s%3Av0%3Ae93fbfca-b550-4c64-8134-bc37b1b02d92%3A8ba554bc10c37e210ce29d8deeebfdb68ce4b7055a6a66d053d79d1a7674ca4e.lC0jTpDcxarvIdkbfLq6MwnolzicBcLCrcFBAyc7ESw",
+      "domain": "bondaracademy.us.auth0.com",
+      "path": "/",
+      "expires": 1821702201.651943,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "auth0",
+      "value": "s%3AtwHkD67BE3Qi4Sf6slGY3DhLDqoBMXZD.hL6ziSCErrtmjNtmYiK8SEYDBHqkuEjR1iq%2Fq0cAhBw",
+      "domain": "bondaracademy.us.auth0.com",
+      "path": "/",
+      "expires": 1790403802.01553,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "auth0_compat",
+      "value": "s%3AtwHkD67BE3Qi4Sf6slGY3DhLDqoBMXZD.hL6ziSCErrtmjNtmYiK8SEYDBHqkuEjR1iq%2Fq0cAhBw",
+      "domain": "bondaracademy.us.auth0.com",
+      "path": "/",
+      "expires": 1790403802.015663,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_legacy_auth0.cWsfdquVN2OjbUfN3PVtqXcSouxPhzwf.is.authenticated",
+      "value": "true",
+      "domain": "petclinic.bondaracademy.com",
+      "path": "/",
+      "expires": 1790231003,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "auth0.cWsfdquVN2OjbUfN3PVtqXcSouxPhzwf.is.authenticated",
+      "value": "true",
+      "domain": "petclinic.bondaracademy.com",
+      "path": "/",
+      "expires": 1790231003,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": []
+}

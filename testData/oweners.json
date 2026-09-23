@@ -1,0 +1,33 @@
+[
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "address": "123 Main St",
+    "city": "Anytown",
+    "telephone": "987654321"
+},
+
+{
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "address": "456 Oak Ave",
+    "city": "Somewhere",
+    "telephone": "789456123"
+},
+
+{
+    "firstName": "Alice",
+    "lastName": "Johnson",
+    "address": "789 Pine Rd",
+    "city": "Elsewhere",
+    "telephone": "456123789"
+},
+
+{
+    "firstName": "Bob",
+    "lastName": "Williams",
+    "address": "321 Elm St",
+    "city": "Anywhere",
+    "telephone": "123456789"
+}
+]

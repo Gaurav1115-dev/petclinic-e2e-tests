@@ -1,57 +1,34 @@
 import { defineConfig, devices } from '@playwright/test';
 
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// import dotenv from 'dotenv';
-// import path from 'path';
-// dotenv.config({ path: path.resolve(__dirname, '.env') });
+require('dotenv').config();
 
-/**
- * See https://playwright.dev/docs/test-configuration.
- */
 export default defineConfig({
   testDir: './tests',
-  fullyParallel: true,
+  fullyParallel: false,
+  retries: 0,
+  workers: 1,
+  reporter: [['html'], ['list']],
+  globalSetup: '.auth/auth-setup.ts',
   
-  retries: 2,
-  workers: 1 ,
-  reporter: 'html',
-
+  timeout: 90000,
   use: {
-    baseURL: 'https://petclinic.bondaracademy.com',
+    baseURL: process.env.BASE_URL || 'https://petclinic.bondaracademy.com',
     trace: 'on-first-retry',
+    storageState: '.auth/user.json',
+    extraHTTPHeaders: {
+      'Authorization': `Bearer ${process.env.ACCESS_TOKEN}`
+    },
+    actionTimeout: 10000,
+    viewport: {height: 1080, width: 1920}
   },
 
   projects: [
     {
-      name: 'setup',
-      testMatch: /.*\.setup\.ts/,
-    },
-    {
       name: 'chromium',
-      dependencies: ['setup'],
-      use: {
-        ...devices['Desktop Chrome'],
-        storageState: 'playwright/.auth/user.json',
-      },
-    },
-    {
-      name: 'firefox',
-      dependencies: ['setup'],
-      use: {
-        ...devices['Desktop Firefox'],
-        storageState: 'playwright/.auth/user.json',
-      },
-    },
-    {
-      name: 'webkit',
-      dependencies: ['setup'],
-      use: {
-        ...devices['Desktop Safari'],
-        storageState: 'playwright/.auth/user.json',
+      use: { 
+        browserName: 'chromium'
       },
     },
   ],
+
 });
