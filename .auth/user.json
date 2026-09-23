@@ -2,40 +2,40 @@
   "cookies": [
     {
       "name": "did",
-      "value": "s%3Av0%3Ae93fbfca-b550-4c64-8134-bc37b1b02d92%3A8ba554bc10c37e210ce29d8deeebfdb68ce4b7055a6a66d053d79d1a7674ca4e.lC0jTpDcxarvIdkbfLq6MwnolzicBcLCrcFBAyc7ESw",
+      "value": "s%3Av0%3A02e43a88-c62e-4da5-ae9b-e1aa0548cbbd%3A8ba554bc10c37e210ce29d8deeebfdb68ce4b7055a6a66d053d79d1a7674ca4e.1VcmEgtCDgbwHMQnaxOMud1fp9AJe66X69wrD6kb%2FnI",
       "domain": "bondaracademy.us.auth0.com",
       "path": "/",
-      "expires": 1821702201.651554,
+      "expires": 1821717773.820238,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "did_compat",
-      "value": "s%3Av0%3Ae93fbfca-b550-4c64-8134-bc37b1b02d92%3A8ba554bc10c37e210ce29d8deeebfdb68ce4b7055a6a66d053d79d1a7674ca4e.lC0jTpDcxarvIdkbfLq6MwnolzicBcLCrcFBAyc7ESw",
+      "value": "s%3Av0%3A02e43a88-c62e-4da5-ae9b-e1aa0548cbbd%3A8ba554bc10c37e210ce29d8deeebfdb68ce4b7055a6a66d053d79d1a7674ca4e.1VcmEgtCDgbwHMQnaxOMud1fp9AJe66X69wrD6kb%2FnI",
       "domain": "bondaracademy.us.auth0.com",
       "path": "/",
-      "expires": 1821702201.651943,
+      "expires": 1821717773.820724,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "auth0",
-      "value": "s%3AtwHkD67BE3Qi4Sf6slGY3DhLDqoBMXZD.hL6ziSCErrtmjNtmYiK8SEYDBHqkuEjR1iq%2Fq0cAhBw",
+      "value": "s%3AYYuvQzSG6fPat_f5XWHcWKjiKGEok6KX.FRpxCJmVgsnT5QiJFjPvUapZndBXTf7pIY2r0cPhrzA",
       "domain": "bondaracademy.us.auth0.com",
       "path": "/",
-      "expires": 1790403802.01553,
+      "expires": 1790419374.414028,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "auth0_compat",
-      "value": "s%3AtwHkD67BE3Qi4Sf6slGY3DhLDqoBMXZD.hL6ziSCErrtmjNtmYiK8SEYDBHqkuEjR1iq%2Fq0cAhBw",
+      "value": "s%3AYYuvQzSG6fPat_f5XWHcWKjiKGEok6KX.FRpxCJmVgsnT5QiJFjPvUapZndBXTf7pIY2r0cPhrzA",
       "domain": "bondaracademy.us.auth0.com",
       "path": "/",
-      "expires": 1790403802.015663,
+      "expires": 1790419374.414315,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
@@ -45,7 +45,7 @@
       "value": "true",
       "domain": "petclinic.bondaracademy.com",
       "path": "/",
-      "expires": 1790231003,
+      "expires": 1790246575,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -55,7 +55,7 @@
       "value": "true",
       "domain": "petclinic.bondaracademy.com",
       "path": "/",
-      "expires": 1790231003,
+      "expires": 1790246575,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
