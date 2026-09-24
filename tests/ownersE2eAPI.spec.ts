@@ -1,19 +1,20 @@
 import { test, expect } from '@playwright/test';
 import ownersTestData from '../testData/oweners.json';
-import { OwnerApi } from '../APILayer/owenerApi';
+import { OwnerApi } from '../APILayer/OwnerApi'
 
 for (const data of ownersTestData) {
   test(`Add Owner Test Through API- ${data.firstName} ${data.lastName}`, async ({ request }) => {
-    const ownerapi = new OwnerApi(request);
-    const response = await ownerapi.createOwner(data);
+    const ownerApi = new OwnerApi(request);
+
+    const response = await ownerApi.createOwner(data);
     expect(response.status()).toBe(201);
 
     const createdOwner = await response.json();
 
-    const updatedData = ownerapi.getUpdatedOwnerData(data);
-    const updateResponse = await ownerapi.updateOwner(createdOwner.id, updatedData);
+    const updatedData = ownerApi.getUpdatedOwnerData(data);
+    const updateResponse = await ownerApi.updateOwner(createdOwner.id, updatedData);
 
-    const fetchResponse = await ownerapi.fetchOwnerByLastName(data.lastName);
+    const fetchResponse = await ownerApi.fetchOwnerByLastName(data.lastName);
     expect(fetchResponse.status()).toBe(200);
 
     const owners = await fetchResponse.json();
