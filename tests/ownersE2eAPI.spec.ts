@@ -1,13 +1,13 @@
 import { test, expect } from '@playwright/test';
 import ownersTestData from '../testData/oweners.json';
-import { OwnerApi } from '../APILayer/owenerapi';
+import { OwnerApi } from '../APILayer/owenerApi';
 
 // Create an OwnerApi instance and add a new owner using the data from ownersTestData.
 // Fetch the newly created owner by last name and validate that the returned owner details match the created record.
 
 for (const data of ownersTestData) {
 
-    test(`add owners using API and Fetch owner Deatils of the API- ${data.firstName} ${data.lastName}`, async ({ request }) => {
+    test(`Add Owner Test Through API- ${data.firstName} ${data.lastName}`, async ({ request }) => {
 
         const ownerapi = new OwnerApi(request);
         const response = await ownerapi.createOwner(data);

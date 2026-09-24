@@ -1,7 +1,5 @@
 import { Page, Locator } from '@playwright/test';
 
-
-
 export class OwnersPage {
     readonly owner: Locator;
     readonly addNew: Locator;
