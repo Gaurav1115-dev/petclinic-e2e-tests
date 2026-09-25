@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { PetTypeApi } from '../APILayer/pettypeApi';
+import { PetTypeApi } from '../APILayer/PetTypeApi';
 import testData from '../testData/pettypes.json';
 
 test('Validate E2E scenario PetType', async ({ request }) => {
