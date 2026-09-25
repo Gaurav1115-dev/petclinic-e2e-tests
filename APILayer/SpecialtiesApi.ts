@@ -13,7 +13,7 @@ export class SpecialtiesApi {
     };
   }
 
-  public async getPetTypes() {
+  public async getSpecialties() {
     const response = await this.request.get(BASE_URL, {
       headers: this.headers,
     });
@@ -21,7 +21,7 @@ export class SpecialtiesApi {
     return response.json();
   }
 
-  public async createPetType(name: string) {
+  public async createSpecialties(name: string) {
     return this.request.post(BASE_URL, {
       headers: this.headers,
       data: {
@@ -31,7 +31,7 @@ export class SpecialtiesApi {
     });
   }
 
-  public async updatePetType(id: number, name: string) {
+  public async updateSpecialties(id: number, name: string) {
     return this.request.put(`${BASE_URL}/${id}`, {
       headers: this.headers,
       data: {
@@ -41,7 +41,7 @@ export class SpecialtiesApi {
     });
   }
 
-  public async deletePetType(id: number) {
+  public async deleteSpecialties(id: number) {
     return this.request.delete(`${BASE_URL}/${id}`, {
       headers: this.headers,
     });
