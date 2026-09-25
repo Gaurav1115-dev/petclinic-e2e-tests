@@ -2,7 +2,7 @@ import { APIRequestContext } from '@playwright/test';
 
 const BASE_URL = 'https://petclinic-api.bondaracademy.com/petclinic/api/specialties';
 
-export class PetTypeApi {
+export class SpecialtiesApi {
   constructor(private readonly request: APIRequestContext) {}
 
   private get headers() {
